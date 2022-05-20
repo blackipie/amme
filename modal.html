@@ -1,0 +1,50 @@
+<div class="max-w-2xl flex flex-col space-y-8 mx-auto">
+
+    <!-- modal  -->
+    <a href="#" id="button" rel="noopener noreferrer" class="text-center cursor-pointer bg-co rounded-md font-semibold 
+                text-lg text-white border-2 border-indigo-500 p-4 hover:bg-white 
+                hover:text-indigo-500 transition-all ease-linear">
+        Message </a>
+    <div class="modal-overlay">
+        <div class="modal-wrapper">
+            <label class="close" for="form"></label>
+
+            <form data-form-output="form-output-global" data-form-type="contact" class="message-form" onsubmit=" 
+                    sendMail(); 
+                    reset(); 
+                    return false;">
+
+                <div class="input-box">
+                    <label for="email" class="input-label">Name / Number *</label>
+                    <input class="input-text" autocomplete="off" id="email" type="name" name="email" required=""
+                        oninvalid="this.setCustomValidity(' ✒️')" oninput="setCustomValidity('')">
+                    <hr class="underline">
+                    <hr class="underline-focus">
+                </div>
+
+                <div class="input-box textarea">
+
+                    <label for="message" class="input-label">Message *</label>
+
+                    <textarea class="input-text" type="text" name="message" required="" id="msg"
+                        oninvalid="this.setCustomValidity(' ✒️')" oninput="setCustomValidity('')"></textarea>
+                    <hr class="underline">
+                    <hr class="underline-focus">
+                </div>
+
+                <div class="input-button">
+                    <button class="button">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- finish -->
+
+
+    <!-- <a href="https://wa.me/8453627391" target="_blank" rel="noopener noreferrer"
+               class="text-center cursor-pointer bg-co rounded-md font-semibold text-lg text-white border-2 border-indigo-500 p-4 hover:bg-white hover:text-indigo-500 transition-all ease-linear">
+               WhatsApp
+            </a> -->
+
+</div>
