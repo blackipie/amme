@@ -2480,7 +2480,7 @@
     <style>
 
 /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Pangolin&display=swap');
 html {
 
 box-sizing: border-box ;
@@ -2781,6 +2781,7 @@ width: 49.48% ;
 
 font-size: .7em ;
 font-weight: bold ;
+font-family: 'Courier New', Courier, monospace;
 color: #00000086 ;
 
 }
@@ -2823,7 +2824,7 @@ content: " " ;
 height: .35em ;
 border-radius: 50% ;
 position: absolute ;
-background-color: #f90029 ;
+background-color: #db5680 ;
 
 }
 
@@ -2889,12 +2890,14 @@ display: none !important ;
             <img style="pointer-events:none" src="profile.png" class="image--cover">
         </div>
         <div>
-            <h1 style="margin: auto; text-align: center; padding-bottom: 10px;font-size: 25px;">
+            <h1
+                style="margin: auto; text-align: center; padding-bottom: 10px;font-size: 25px; font-family: 'Pangolin', cursive ;">
                Emma
             <!--<img src="bekarqs.png" width="180" style="text-align: center;margin: auto; pointer-events: none;" alt="BekarQ">-->
             </h1>
         
-            <h1 style="margin: auto;text-align: center;  padding-bottom: 50px;font-size: 21px;">
+            <h1
+                style="margin: auto;text-align: center;  padding-bottom: 50px;font-size: 21px; font-family: 'Pangolin', cursive ;">
                 <q>🌸I am rarely bored alone 🥂; <br>l am often bored in groups and crowds</q>
             </h1>
         </div>
@@ -2932,6 +2935,9 @@ transition: background-color var(--cubic-slider) ;">
                 <div class="slider__content">
 
                     <img class="imgmu slider__img" src="2.jpg" alt="cover">
+                    <img class="imgmu slider__img" src="3.jpg" alt="cover">
+                    <img class="imgmu slider__img" src="4.jpg" alt="cover">
+                    <img class="imgmu slider__img" src="s.jpg" alt="cover">
 
 
                 </div>
@@ -2948,7 +2954,7 @@ transition: background-color var(--cubic-slider) ;">
 
                 <p class="player__context slider__context">
 
-                    <strong class="slider__name"></strong>
+                    <span class="slider__name" style="font-size:16px;font-family: 'Courier New', Courier, monospace;"></span>
 
                     <span class="player__title slider__title"
                         style="font-family:'Courier New', Courier, monospace"></span>
@@ -2973,14 +2979,14 @@ transition: background-color var(--cubic-slider) ;">
 
         <ul class="player__playlist list">
 
-            <li class="player__song" style="display:none">
+            <li class="player__song">
 
                 <img class="player__img imgmu" src="2.jpg" alt="cover">
 
                 <p class="player__context">
 
-                        <span class="player__title">--</span>
-                        <b class="player__song-name">Ye dil tum bin</b>
+                        <span class="player__title">Rushabh Jain</span>
+                        <b class="player__song-name" style="font-family:'Courier New', Courier, monospace">Ye dil tum bin</b>
                     <span class="flexm">
 
                         <span class="player__title"></span>
@@ -2993,6 +2999,47 @@ transition: background-color var(--cubic-slider) ;">
                 <audio class="audio" src="yedil.mp3"></audio>
 
             </li>
+            <li class="player__song">
+
+                <img class="player__img imgmu" src="3.jpg" alt="cover">
+
+                <p class="player__context">
+
+                        <span class="player__title">Prateek Kuhad</span>
+                        <b class="player__song-name" style="font-family:'Courier New', Courier, monospace">Cold/mess</b>
+                    <span class="flexm">
+
+                        <span class="player__title"></span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="2.mp3"></audio>
+
+            </li>
+            <li class="player__song">
+
+                <img class="player__img imgmu" src="s.jpg" alt="cover">
+
+                <p class="player__context">
+
+                        <span class="player__title">Anuv Jain</span>
+                        <b class="player__song-name" style="font-family:'Courier New', Courier, monospace">Riha</b>
+                    <span class="flexm">
+
+                        <span class="player__title"></span>
+                        <span class="player__song-time"></span>
+
+                    </span>
+
+                </p>
+
+                <audio class="audio" src="3.mp3"></audio>
+
+            </li>
+
 
         </ul>
 
